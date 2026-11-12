@@ -19,9 +19,13 @@
 
 <br/>
 
+<div align="center">
+
 | **316** | **5편** | **27,000+** | **2건** |
 |:---:|:---:|:---:|:---:|
 | 학생용 GPT 서비스 가입 계정 | 채택 논문 (1저자 1 · 공저 4) | 음성인식 모델 누적 다운로드 | 특허 출원 (공동 발명) |
+
+</div>
 
 ---
 
@@ -60,7 +64,7 @@
 
 문제 탐색과 해결을 팀이 함께 했고, 리버틀 대응에 참여했습니다.
 
-| Venue | Paper | Link |
+| Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Paper | Link |
 |:---|:---|:---:|
 | ![ACL 2026](https://img.shields.io/badge/ACL%202026-Main-1f6feb?style=flat-square) | **TH-RAG**: Topic-Based Hierarchical Knowledge Graphs for Robust Multi-hop Reasoning in Graph-based RAG Systems | [Paper](https://aclanthology.org/2026.acl-long.1740/) |
 | ![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-Main-8A2BE2?style=flat-square) | Retrieval-Augmented Generation with Retrieval-optimized TRA Structure | |
@@ -120,17 +124,18 @@
 
 ---
 
-### 🎙 [wav2vec2-base-korean — 한국어 음성인식 모델](https://huggingface.co/Kkonjeong/wav2vec2-base-korean)
+### 🧾 Signal Receipts — 숫자와 출처를 근거까지 되짚는 공시 브리핑 파이프라인
 
-**공동 개발**
+**문제 정의 · 설계 · 검수 (구현에는 코딩 에이전트 사용) · 코드 비공개**
 
-`wav2vec2` `CTC` `Transformers` `Zeroth-Korean`
+`Python` `MCP Server` `BM25 + Embedding RRF` `pytest` `Claude Code Hooks`
 
-wav2vec2-base를 자모 단위 CTC로 미세조정한 한국어 음성인식 모델입니다.
+DART 공시로 검증 가능한 에이전트 환경을 만들고, 에이전트가 쓴 글의 숫자와 출처가 실제 근거에서 나왔는지 코드로 확인합니다.
 
-* Zeroth-Korean 테스트 **CER 0.073**
-* Hugging Face 누적 다운로드 **27,000회 이상**, 이 모델에서 파생된 공개 미세조정 모델 **90개 이상** (2026년 11월 조회)
-* 학습·추론 노트북: [KkonJJ/wav2vec2-base-korean](https://github.com/KkonJJ/wav2vec2-base-korean)
+* 잠정실적 공시 **7,373건** 중 6,976건 파싱(94.6%), MCP 서버 **도구 12개**(연결마다 기준 시각 지정)
+* 기준 시각 RAG(공개 시각 필터 → BM25 + 임베딩 RRF → LLM 리랭크): 기준 시각에 맞지 않는 값의 문서가 상위 5에 섞이는 질문 **104개 중 94개 → 3개**
+* 채점기 2개는 LLM이 아닌 코드: 브리핑의 숫자를 근거에서 다시 계산하고, 출처가 그 에피소드의 도구 결과에 있었는지 확인
+* 평가셋은 훅과 해시 봉인으로 보호, 테스트 **647건** 통과
 
 ---
 
@@ -160,6 +165,20 @@ wav2vec2-base를 자모 단위 CTC로 미세조정한 한국어 음성인식 모
 * 분산 채점이 느려진 원인(프로세스마다 BLAS 스레드 12개)을 찾아 고정, 처리량 **25배** 회복
 * 임대 GPU 유휴 과금 차단: 감시를 세션 밖으로 옮겨 시간당 **$4.06 → $0.06**
 * 공유 서버 재부팅 복구를 3중(재시작 정책·systemd·cron)으로 구성, 끊긴 세션 **9건 중 9건** 접속 복구
+
+---
+
+### 🎙 [wav2vec2-base-korean — 한국어 음성인식 모델](https://huggingface.co/Kkonjeong/wav2vec2-base-korean)
+
+**공동 개발**
+
+`wav2vec2` `CTC` `Transformers` `Zeroth-Korean`
+
+wav2vec2-base를 자모 단위 CTC로 미세조정한 한국어 음성인식 모델입니다.
+
+* Zeroth-Korean 테스트 **CER 0.073**
+* Hugging Face 누적 다운로드 **27,000회 이상**, 이 모델에서 파생된 공개 미세조정 모델 **90개 이상** (2026년 11월 조회)
+* 학습·추론 노트북: [KkonJJ/wav2vec2-base-korean](https://github.com/KkonJJ/wav2vec2-base-korean)
 
 ---
 
@@ -207,7 +226,7 @@ wav2vec2-base를 자모 단위 CTC로 미세조정한 한국어 음성인식 모
 <img src="https://img.shields.io/badge/RAG-2563EB?style=flat-square"/>
 <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
 <img src="https://img.shields.io/badge/Tool%20Calling-475569?style=flat-square"/>
-<img src="https://img.shields.io/badge/Subagent%20Orchestration-111827?style=flat-square"/>
+<img src="https://img.shields.io/badge/Subagent%20Orchestration-334155?style=flat-square"/>
 <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=anthropic&logoColor=white"/>
 </p>
 
