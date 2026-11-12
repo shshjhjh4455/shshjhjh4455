@@ -21,9 +21,9 @@
 
 <div align="center">
 
-| **316** | **5편** | **27,000+** | **2건** |
+| **316** | **8편** | **27,000+** | **2건** |
 |:---:|:---:|:---:|:---:|
-| 학생용 GPT 서비스 가입 계정 | 채택 논문 (1저자 1 · 공저 4) | 음성인식 모델 누적 다운로드 | 특허 출원 (공동 발명) |
+| 학생용 GPT 서비스 가입 계정 | 게재·채택 논문 (1저자 3 · 공저 5) | 음성인식 모델 누적 다운로드 | 특허 출원 (공동 발명) |
 
 </div>
 
@@ -70,6 +70,18 @@
 | ![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-Main-8A2BE2?style=flat-square) | Retrieval-Augmented Generation with Retrieval-optimized TRA Structure | |
 | ![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-Findings-0F766E?style=flat-square) | **Atom-RAG**: Atomic Fact-Centric Retrieval for Multi-Hop Reasoning | [Paper](https://aclanthology.org/2026.findings-emnlp.2323/) |
 | ![EMNLP 2025](https://img.shields.io/badge/EMNLP%202025-Findings-0F766E?style=flat-square) | **ReGraphRAG**: Reorganizing Fragmented Knowledge Graphs for Multi-Perspective Retrieval-Augmented Generation | [Paper](https://aclanthology.org/2025.findings-emnlp.290/) |
+
+---
+
+### 학부 연구
+
+**한성대학교 학부 과정에서 쓴 논문**
+
+| Venue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Paper | Role |
+|:---|:---|:---:|
+| ![KICS 2024](https://img.shields.io/badge/KICS%202024-%ED%95%9C%EA%B5%AD%ED%86%B5%EC%8B%A0%ED%95%99%ED%9A%8C-475569?style=flat-square) | 야구 중계 영상 내 행동 인식을 위한 모델 및 데이터셋 비교 분석 연구 (LG U+ 산학) | 1저자 |
+| ![KICS 2024](https://img.shields.io/badge/KICS%202024-%ED%95%9C%EA%B5%AD%ED%86%B5%EC%8B%A0%ED%95%99%ED%9A%8C-475569?style=flat-square) | 리뷰 데이터 기반의 사용자 친화적인 호텔 추천 챗봇 시스템 | 1저자 |
+| ![KCI 2025](https://img.shields.io/badge/KCI-2025-B45309?style=flat-square) | 코사인 유사도 기반 객체 추적을 통한 다중 객체 환경에서의 행동 인식 개선 (LG U+ 산학) · 차세대융합기술학회논문지 9(1) · [Paper](https://www.earticle.net/Article/A461379) | 공저 (3저자) |
 
 ---
 
@@ -190,6 +202,18 @@ wav2vec2-base를 자모 단위 CTC로 미세조정한 한국어 음성인식 모
 
 영화 캐릭터의 말투와 성격을 RAG와 GPT 미세조정으로 구현한 페르소나 챗봇 프로젝트입니다. 긴 문맥과 기억을 잃는 한계가 석사 연구의 출발점이 됐습니다.
 
+---
+
+### 🎓 학부 프로젝트
+
+| 프로젝트 | 내용 | 기간 |
+|:---|:---|:---:|
+| [야구 행동 인식 모델](https://github.com/shshjhjh4455/mmaction2_aihub_sports_video_data_baseball) | 한성대학교 × LG U+ 산학 프로젝트. 중계 영상에서 사람을 검출하고(Faster R-CNN) 포즈를 추정한 뒤(HRNet) PoseC3D로 13개 동작을 분류 | 2023.10 ~ 2024.01 |
+| AI 기반 얼굴 이미지 합성 엔진 | 한성대학교 × LG U+ 산학 프로젝트. 얼굴 랜드마크로 마스크를 만들고 inpainting으로 보정 | 2024.10 ~ 2024.11 |
+| 음성·표정 동기화 AI 캐릭터 인터랙션 | 음성과 표정을 동기화한 캐릭터 인터랙션 시스템. 위의 wav2vec2 한국어 음성인식 모델을 이 프로젝트에서 만들었습니다 | 2024.03 ~ 2024.07 |
+| 호텔 추천 챗봇 | 호텔 리뷰로 KoBERT 감성 분류기를 학습하고 문장 임베딩 유사도와 결합해 추천 | 2023.10 ~ 2023.12 |
+| 농산물 가격 예측 | 멀티캠퍼스 부트캠프 최종 프로젝트 **최우수상** | 2022.12 ~ 2023.01 |
+
 <br/>
 
 ---
@@ -202,7 +226,31 @@ wav2vec2-base를 자모 단위 CTC로 미세조정한 한국어 음성인식 모
 | BK21 딥러닝 수업 | 조교 | 2026년 1학기 |
 | 학생용 GPT 채팅 서비스 | 개발 · 운영 | 2024 |
 | 시네마캐릭터 (캡스톤 디자인) | AI/모델 팀 | 2024.03 ~ 2024.07 |
-| 멀티캠퍼스 AI 플랫폼 데이터분석 과정 | 최종 프로젝트 **최우수상** | 2022.07 ~ 2023.01 |
+| 한성대학교 × LG U+ 산학 프로젝트 | 야구 행동 인식 · 얼굴 이미지 합성 | 2023.10 ~ 2024.01, 2024.10 ~ 2024.11 |
+| 멀티캠퍼스 「AI 플랫폼을 활용한 데이터 분석」 부트캠프 | 교육생 | 2022.08 ~ 2023.01 |
+| 성북구청 서울형혁신교육지구 마을 교육 활동 | 연구원 (아두이노 교육 교재 제작 · 대면 교육) | 2021.06 ~ 2021.08 |
+
+<br/>
+
+---
+
+## 🏆 수상 · 대회
+
+| 대회 | 내용 | 시기 |
+|:---|:---|:---:|
+| 2024 SW중심대학 디지털 경진대회 (SW 부문) · 데이콘 | 예선 | 2024.07 |
+| 멀티캠퍼스 「AI 플랫폼을 활용한 데이터 분석」 부트캠프 | 프로젝트 **최우수상** | 2023.01 |
+
+<br/>
+
+---
+
+## 🎓 Education
+
+| 학교 | 과정 | 기간 |
+|:---|:---|:---:|
+| 한양대학교 일반대학원 컴퓨터소프트웨어학과 | 석사과정 (인공지능 연구실) | 2025.03 ~ 2027.02 (예정) |
+| 한성대학교 컴퓨터공학부 | 학사 | 2020.03 ~ 2024.08 |
 
 <br/>
 
